@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="todo.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container mt-2" style="margin-left: 30% !important;">
+        <div class="row">
+            <div class="center col-12">
+                <div class="card w-50 justify-content-right">
+                    <div class="card-header">
+                        <h4 class="h4">New Task</h2>
+                            <input type="text" id='newTask' name='newTask' class="form-control border-top-0 border-left-0 border-right-0" placeholder="Enter task here...">
+                            <button type="button" class="btnAddTask btn btn-sm btn-success float-right mt-2">
+                                <i class="fa fa-plus" aria-hidden="true"></i> Add Task
+                            </button>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="h3">Task List</h3>
+                        <ul class="addedTasks" id="addedTasks"><small></small></ul>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btnClearTasks btn btn-sm btn-danger float-right">
+                            <i class="fa fa-trash-o" aria-hidden="true"></i> Clear Tasks
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="constants.js"></script>
+<script src="todo.js"></script>
+
+</html>
